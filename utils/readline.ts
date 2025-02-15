@@ -10,7 +10,7 @@ export class Readline {
     });
   }
 
-  promptQuestion(promptText: string): Promise<string> {
+  async promptQuestion(promptText: string): Promise<string> {
     return new Promise<string>(resolve => {
       this.rl.question(promptText, resolve);
     });
